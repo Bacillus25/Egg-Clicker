@@ -1,0 +1,45 @@
+﻿<Window x:Class="eggClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eggClicker"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        MaxHeight="443" MaxWidth="852"
+        MinHeight="443" MinWidth="852"
+        Loaded="Window_Load"
+        >
+
+    <Grid>
+        <Image Source="/EGGCLICKER.png" Margin="-9,-18,0,-18"/>
+
+        <Label x:Name="lblEggCount" Content="0" HorizontalAlignment="Left" Margin="97,337,0,0" VerticalAlignment="Top" Background="#FF2E2E56" Width="73"/>
+        <Label x:Name="lblEggCountText" Content="Eggs:" HorizontalAlignment="Left" Margin="62,337,0,0" VerticalAlignment="Top" Width="38"/>
+        <Label Content="Golden eggs&#xA;Count: &#xA;Cost: " HorizontalAlignment="Left" Margin="288,305,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Frying pan&#xA;Count: &#xA;Cost: " HorizontalAlignment="Left" Margin="286,226,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Cheese&#xA;Count: &#xA;Cost:" HorizontalAlignment="Left" Margin="288,144,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Salt and pepper&#xA;Count: &#xA;Cost: " HorizontalAlignment="Left" Margin="288,55,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblSaltCount" Content="0" HorizontalAlignment="Left" Margin="324,71,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCheeseCount" Content="0" HorizontalAlignment="Left" Margin="324,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPanCount" Content="0" HorizontalAlignment="Left" Margin="324,242,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGoldenEggCount" Content="0" HorizontalAlignment="Left" Margin="324,321,0,0" VerticalAlignment="Top"/>
+        <Label Content="EPS:" HorizontalAlignment="Left" Margin="68,301,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEPS" Content="0" HorizontalAlignment="Left" Margin="97,301,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSaltCost" Content="/" HorizontalAlignment="Left" Margin="316,87,0,0" VerticalAlignment="Top" Width="118" Height="26"/>
+        <Label x:Name="lblCheeseCost" Content="/" HorizontalAlignment="Left" Margin="316,176,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblPanCost" Content="/" HorizontalAlignment="Left" Margin="316,258,0,0" VerticalAlignment="Top" Width="134"/>
+        <Image x:Name="imgEgg" Margin="-21,0,0,0" Source="/EGG.png" HorizontalAlignment="Left" Width="307" Height="334" VerticalAlignment="Top"/>
+        <Button x:Name="btnEgg" Content="Button" HorizontalAlignment="Left" Margin="46,54,0,172" Width="176" Opacity="0" Click="btnEgg_Click"/>
+        <Label x:Name="lblGoldenEggCost" Content="/" HorizontalAlignment="Left" Margin="316,337,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="655,4,0,0" VerticalAlignment="Top" Height="18" Width="58" Click="btnSave_Click_1"/>
+        <ListBox x:Name="lstClickerUpgrades" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="582,46,75,86"/>
+        <Button x:Name="btnBuyListUpgrade" Content="Buy Clicker Upgrade" HorizontalAlignment="Right" Margin="0,0,95,47" VerticalAlignment="Bottom" RenderTransformOrigin="0.353,-0.048" Width="139" Height="30" Click="btnBuyListUpgrade_Click"/>
+        <Button x:Name="btnSalt" Content="Buy" HorizontalAlignment="Left" Height="20" Margin="376,77,0,0" VerticalAlignment="Top" Width="23" Click="btnSalt_Click"/>
+        <Button x:Name="btnCheese" Content="Buy" HorizontalAlignment="Left" Height="20" Margin="376,163,0,0" VerticalAlignment="Top" Width="23" Click="btnCheese_Click"/>
+        <Button x:Name="btnPan" Content="Buy" HorizontalAlignment="Left" Height="20" Margin="376,242,0,0" VerticalAlignment="Top" Width="23" Click="btnPan_Click"/>
+        <Button x:Name="btnGoldenEgg" Content="Buy" HorizontalAlignment="Left" Height="20" Margin="376,321,0,0" VerticalAlignment="Top" Width="23" Click="btnGoldenEgg_Click"/>
+        <Label x:Name="lblEggCountText_Copy" Content="EggPWR:" HorizontalAlignment="Left" Margin="42,283,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="lblEggPwr" Content="0" HorizontalAlignment="Left" Margin="97,283,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
